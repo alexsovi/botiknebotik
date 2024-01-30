@@ -30,7 +30,7 @@ async def on_message(mes):
     elif mes.content.startswith("Hello") or mes.content.startswith("Hi"):
         await mes.channel.send("Do you speak Russian? I can only speak Russian.")
     elif mes.content.startswith("чем помочь") or mes.content.startswith("Чем я могу помочь"):
-        await mes.channel.send("Да ничем. Хотя... Подпишись на канал моего создателя: https://vk.com/alexsovi")
+        await mes.channel.send("Да ничем. Хотя... Подпишись на канал моего создателя: https://youtube.com/@alexsovi")
     elif mes.content.startswith("ты npc"):
         await mes.channel.send("A gun! Give me a freaking gun! WTH, i can't pick it up.", tts=True)
     elif mes.content.startswith("gjitk yf[eq"):
