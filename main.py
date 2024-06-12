@@ -47,26 +47,24 @@ async def on_message(mes):
         await mes.channel.send(readFile("nozh.txt"))
     elif mes.content.startswith("Кнб бумага") or mes.content.startswith("кнб бумага"):
         await mes.channel.send(readFile("bumaga.txt"))
-    elif mes.content.startswith("пива я лублу тебя"):
-        await mes.channel.send("https://cdn.discordapp.com/attachments/1006067338258423899/1006842490231472229/pivoyalublutebu.mp4")
-    elif mes.content.startswith("послать жеку"):
-        await mes.channel.send("бомбим его номер: Kzc5MDUxOTcwMzM3 (b64)")
-    elif mes.content.startswith("Кахут"):
-        await mes.author.send(
-            embed=discord.Embed(title="Вопрос", description="Кто лучше?"),
-            components=[
-                Button(style=ButtonStyle.blue, label="Ты"),
-                Button(style=ButtonStyle.blue, label="Mipper6"),
-                Button(style=ButtonStyle.blue, label="Оба")
-            ]
-        )
-        while True:
-            r = await client.wait_for("button_click")
-            if r.component.label == "Ты":
-                await r.respond(content="https://tenor.com/view/harosh-memeblog-thomas-shelby-gif-21009538")
-            elif r.component.label == "Mipper6":
-                await r.respond(content="https://tenor.com/view/frog-kermit-muppets-idiot-stupid-gif-11872194")
-            elif r.component.label == "Оба":
-                await r.respond(content="https://tenor.com/view/%D1%83%D0%BB%D1%8C%D1%80%D1%82%D1%80%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D1%88-%D1%85%D0%B0%D1%80%D0%BE%D1%88-%D0%BC%D0%B5%D0%B3%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D1%88-gif-24070806")
+    # elif mes.content.startswith("пива я лублу тебя"):
+    #     await mes.channel.send("https://cdn.discordapp.com/attachments/1006067338258423899/1006842490231472229/pivoyalublutebu.mp4")
+    # elif mes.content.startswith("Кахут"):
+    #     await mes.author.send(
+    #         embed=discord.Embed(title="Вопрос", description="Кто лучше?"),
+    #         components=[
+    #             Button(style=ButtonStyle.blue, label="Ты"),
+    #             Button(style=ButtonStyle.blue, label="Mipper6"),
+    #             Button(style=ButtonStyle.blue, label="Оба")
+    #         ]
+    #     )
+    #     while True:
+    #         r = await client.wait_for("button_click")
+    #         if r.component.label == "Ты":
+    #             await r.respond(content="https://tenor.com/view/harosh-memeblog-thomas-shelby-gif-21009538")
+    #         elif r.component.label == "Mipper6":
+    #             await r.respond(content="https://tenor.com/view/frog-kermit-muppets-idiot-stupid-gif-11872194")
+    #         elif r.component.label == "Оба":
+    #             await r.respond(content="https://tenor.com/view/%D1%83%D0%BB%D1%8C%D1%80%D1%82%D1%80%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D1%88-%D1%85%D0%B0%D1%80%D0%BE%D1%88-%D0%BC%D0%B5%D0%B3%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D1%88-gif-24070806")
 
 client.run("токен вашего бота")
